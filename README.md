@@ -1,8 +1,11 @@
-Copacetic Test Printer
+
+![](https://raw.githubusercontent.com/copacetic-co/test-printer/master/assets/images/copacetic-face.png)
+
+# Copacetic Test Printer
 
 Rather than see a string of dots and letters, get some darn information as your tests are running. 
 
-![](https://raw.githubusercontent.com/copacetic-co/test-printer/master/assets/images/screenshot.jpg)
+![](https://raw.githubusercontent.com/copacetic-co/test-printer/master/assets/images/screenshot.png)
 
 ## Installation
 
