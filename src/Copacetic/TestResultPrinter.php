@@ -4,7 +4,7 @@ namespace Copacetic;
 /**
  * Totally kickass test result printer
  *
- * @version 1.0.0
+ * @version 2.0.2
  * @author Copacetic Media. <copacetic.co>
  */
 class TestResultPrinter extends \PHPUnit\TextUI\ResultPrinter
@@ -26,7 +26,7 @@ class TestResultPrinter extends \PHPUnit\TextUI\ResultPrinter
      * @param \PHPUnit\Framework\Test $test
      * @param $time
      */
-    public function startTest(\PHPUnit\Framework\Test $test, $time)
+    public function startTest(\PHPUnit\Framework\Test $test)
     {
         $this->out("'" . $test->getName() . "'...running");
     }
@@ -34,7 +34,7 @@ class TestResultPrinter extends \PHPUnit\TextUI\ResultPrinter
     /**
      * @param \PHPUnit\Framework\Test $test
      */
-    public function endTest(\PHPUnit\Framework\Test $test)
+    public function endTest(\PHPUnit\Framework\Test $test, $time)
     {
         if ($test instanceof \PHPUnit\Framework\TestCase) {
             $this->numAssertions += $test->getNumAssertions();
@@ -42,9 +42,9 @@ class TestResultPrinter extends \PHPUnit\TextUI\ResultPrinter
         $this->lastTestFailed = false;
 
         if (get_class($test) == 'PHPUnit\Framework\TestSuite') {
-            $this->out(" SETUP FAIL", 'fg-red', true);
+            $this->out(" SETUP FAIL at " . $time, 'fg-red', true);
         } elseif ($test->hasFailed()) {
-            $this->out(" FAIL", 'fg-red', true);
+            $this->out(" FAIL at " . $time, 'fg-red', true);
         } else {
             $numAssertions = ($test instanceof \PHPUnit\Framework\TestCase) ? $test->getNumAssertions() : 1;
             if ($numAssertions > 0) {
