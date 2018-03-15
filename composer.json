@@ -1,6 +1,6 @@
 {
 	"name": "copacetic/test-printer",
-	"description": "Make the test run console output useful.",
+	"description": "Make the test run console output slightly useful.",
 	"homepage": "https://github.com/copacetic-co/test-printer",
 	"keywords": ["phpunit","php","unit test","resultprinter","formatter", "test printer"],
 	"version": "1.0.0",
