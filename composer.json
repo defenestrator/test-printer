@@ -1,0 +1,32 @@
+{
+	"name": "copacetic/unit-test-printer",
+	"description": "Make the test run console output useful, maybe even pretty.",
+	"homepage": "https://github.com/copacetic-co/unit-test-printer",
+	"keywords": ["phpunit","php","unit test","resultprinter","formatter"],
+	"version": "1.0.0",
+	"license": "MIT",
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"autoload": {
+		"classmap": [
+			"src/Copacetic/UnitTest"
+		]
+	},
+	"scripts": {
+        "uninstall": [
+        	"rm -rf vendor",
+        	"rm -rf composer.lock"
+        	],
+        "build": [
+        	"composer run-script uninstall",
+        	"composer install --no-dev"
+        	],
+        "test": "phpunit",
+        "coverage": [
+            "rm -f tests-coverage",
+            "mkdir tests-coverage",
+            "phpunit --coverage-html ./tests-coverage"
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+<phpunit
+	bootstrap="phpunit_bootstrap.php"
+	colors="true"
+	printerClass="Verysimple\UnitTest\VerboseTestResultPrinter"
+	printerFile="src/Verysimple/UnitTest/VerboseTestResultPrinter.php"
+	stopOnError="false"
+	stopOnFailure="false"
+	stopOnIncomplete="false"
+	stopOnSkipped="false">
+
+	<testsuite name="Default Tests">
+		<directory>tests/</directory>
+	</testsuite>
+
+</phpunit>
