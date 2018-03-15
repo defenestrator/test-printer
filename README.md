@@ -31,9 +31,9 @@ You should seriously use composer, dork.
 To use the `TestResultPrinter` class,  specify it in the root `<phpunit>` element of `phpunit.xml`. 
 
 	<phpunit
-		colors="true"
-		printerClass="Copacetic\TestResultPrinter"
-		>
-		...
+    colors="true"
+    printerClass="Copacetic\TestResultPrinter"
+    >
+    ...
 	</phpunit>
 
