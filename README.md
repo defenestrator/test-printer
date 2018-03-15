@@ -15,7 +15,7 @@ You may alternatively include the project in your composer.json:
 ```json
 	{
 		"require-dev": {
-			"copacetic/test-printer": ">=1.0.1"
+			"copacetic/test-printer": ">=2.0.1"
 		}
 	}
 ```

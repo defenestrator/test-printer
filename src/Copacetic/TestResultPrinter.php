@@ -24,10 +24,11 @@ class TestResultPrinter extends \PHPUnit\TextUI\ResultPrinter
 
     /**
      * @param \PHPUnit\Framework\Test $test
+     * @param $time
      */
-    public function startTest(\PHPUnit\Framework\Test $test)
+    public function startTest(\PHPUnit\Framework\Test $test, $time)
     {
-        $this->out("'" . $test->getName() . "'...");
+        $this->out("'" . $test->getName() . "'...running");
     }
 
     /**
