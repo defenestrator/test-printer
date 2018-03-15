@@ -24,7 +24,6 @@ class TestResultPrinter extends \PHPUnit\TextUI\ResultPrinter
 
     /**
      * @param \PHPUnit\Framework\Test $test
-     * @param $time
      */
     public function startTest(\PHPUnit\Framework\Test $test)
     {
@@ -33,6 +32,7 @@ class TestResultPrinter extends \PHPUnit\TextUI\ResultPrinter
 
     /**
      * @param \PHPUnit\Framework\Test $test
+     * @param $time
      */
     public function endTest(\PHPUnit\Framework\Test $test, $time)
     {
