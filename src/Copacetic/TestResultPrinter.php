@@ -42,9 +42,9 @@ class TestResultPrinter extends \PHPUnit\TextUI\ResultPrinter
         $this->lastTestFailed = false;
 
         if (get_class($test) == 'PHPUnit\Framework\TestSuite') {
-            $this->out(" SETUP FAIL at " . $time, 'fg-red', true);
+            $this->out(" SETUP FAIL at " . $time . ' seconds.', 'fg-red', true);
         } elseif ($test->hasFailed()) {
-            $this->out(" FAIL at " . $time, 'fg-red', true);
+            $this->out(" FAIL at " . $time .' seconds.', 'fg-red', true);
         } else {
             $numAssertions = ($test instanceof \PHPUnit\Framework\TestCase) ? $test->getNumAssertions() : 1;
             if ($numAssertions > 0) {
@@ -67,8 +67,7 @@ class TestResultPrinter extends \PHPUnit\TextUI\ResultPrinter
         parent::startTestSuite($suite);
 
         if (!$this->headerPrinted) {
-            $header = "
-██████╗ ██╗  ██╗██████╗ ██╗   ██╗███╗   ██╗██╗████████╗
+            $header = "██████╗ ██╗  ██╗██████╗ ██╗   ██╗███╗   ██╗██╗████████╗
 ██╔══██╗██║  ██║██╔══██╗██║   ██║████╗  ██║██║╚══██╔══╝
 ██████╔╝███████║██████╔╝██║   ██║██╔██╗ ██║██║   ██║
 ██╔═══╝ ██╔══██║██╔═══╝ ██║   ██║██║╚██╗██║██║   ██║
