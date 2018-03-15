@@ -6,11 +6,11 @@ Rather than see a string of dots and letters, get some darn information as your 
 
 ## Installation
 
-Install TestResultPrinter class with composer:
+Install Copacetic Test Result Printer with composer:
 
 	composer require --dev copacetic/test-printer
 
-For automatic installation, include the project in your composer.json (it is only necessary in require-dev):
+You may alternatively include the project in your composer.json:
 
 ```json
 	{
@@ -20,12 +20,12 @@ For automatic installation, include the project in your composer.json (it is onl
 	}
 ```
 
-If you don't use composer, you can download and save `TestResultPrinter.php` wherever you want. 
+If you don't use composer, you can simply download and save `TestResultPrinter.php` wherever you want. 
 You should seriously use composer, dork.
 
 ## Usage
 
-To use the `TestResultPrinter` class,  specify it in the phpunit element of `phpunit.xml` config file. 
+To use the `TestResultPrinter` class,  specify it in the root `<phpunit>` element of `phpunit.xml`. 
 
 	<phpunit
 		colors="true"
