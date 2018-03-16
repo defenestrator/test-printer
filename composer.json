@@ -2,7 +2,7 @@
 	"name": "copacetic/test-printer",
 	"description": "Make the console output useful while the tests are running.",
 	"homepage": "https://github.com/copacetic-co/test-printer",
-	"keywords": ["phpunit","php","unit test","resultprinter","formatter", "test printer"],
+	"keywords": ["phpunit","php","unit test","result printer","formatter", "test printer", "resultprinter"],
 	"license": "MIT",
 	"require": {
 		"php": ">=5.4.0"
