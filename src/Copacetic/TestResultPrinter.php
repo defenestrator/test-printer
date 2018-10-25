@@ -1,11 +1,11 @@
 <?php
-namespace Copacetic;
+namespace Defenestrator;
 
 /**
  * Totally kickass test result printer
  *
  * @version 2.0.2
- * @author Copacetic Media. <copacetic.co>
+ * @author Jeremy Jacob Anderson <Jeremy Jacob Anderson>
  */
 class TestResultPrinter extends \PHPUnit\TextUI\ResultPrinter
 {

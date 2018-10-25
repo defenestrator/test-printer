@@ -1,7 +1,7 @@
 {
-	"name": "copacetic/test-printer",
+	"name": "defenestrator/test-printer",
 	"description": "Make the console output useful while the tests are running.",
-	"homepage": "https://github.com/copacetic-co/test-printer",
+	"homepage": "https://github.com/defenestrator/test-printer",
 	"keywords": ["phpunit","php","unit test","result printer","formatter", "test printer", "resultprinter"],
 	"license": "MIT",
 	"require": {
@@ -9,7 +9,7 @@
 	},
 	"autoload": {
 		"classmap": [
-			"src/Copacetic"
+			"src/Defenestrator"
 		]
 	},
 	"scripts": {
